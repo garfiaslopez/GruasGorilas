@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This is the principal color to the app-->
+    <color name="colorPrimaryYellow">#F9BD27</color>
+    <!--This color only use to sub-subtitles-->
+    <color name="colorSecundaryYellow">#FFAB40</color>
+    <!--This color only use to promo labels-->
+    <color name="colorThirdYellow">#FFCD00</color>
+    <!--This color only use to subtitles-->
+    <color name="colorPrimaryGary">#757575</color>
+    <!--This color only use to sub-subtitles-->
+    <color name="colorSecundaryGary">#999999</color>
+    <!--This color only use to any-->
+    <color name="colorThirdGary">#999999</color>
+    <!--This color only use to acentments-->
+    <color name="colorAccent">#F9BD27</color>
+    <!--This color use in some text-->
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="floatingButton">#E8E8E8</color>
+</resources>

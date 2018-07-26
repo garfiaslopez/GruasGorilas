@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+ <section layout="column">
+
+     <md-subheader id="subtitle"  class="md-primary">Agregar Tarifa</md-subheader>
+
+    <div>
+        <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+            <div flex="40" flex-sm="100">
+                <md-input-container class="md-block" >
+                    <label>Origen</label>
+                    <input ng-model="RouteExample.Ruta.origin">
+                </md-input-container>
+            </div>
+
+            <div flex="40" flex-sm="100">
+               <md-input-container class="md-block" >
+                    <label>Destino</label>
+                    <input ng-model="RouteExample.Ruta.destiny">
+                </md-input-container>
+            </div>
+
+            <div flex="20" flex-sm="100">
+               <md-input-container class="md-block" >
+                    <label>Tarifa</label>
+                    <input ng-model="RouteExample.Ruta.price">
+                </md-input-container>
+            </div>
+
+        </div>
+    </div>
+
+     <div flex layout="row" layout-align="space-around center">
+         <md-button id="primarybtn" ng-click="RouteExample.Submit()" class="md-raised md-primary">Guardar</md-button>
+         <md-button id="secondarybtn" ng-click="RouteExample.CancelEditing()" class="md-raised md-accent" ng-if="RouteExample.isEditing.flag" >
+         Cancelar</md-button>
+     </div>
+
+
+     <br>
+     <md-subheader class="md-primary">Tarifas Existentes</md-subheader>
+     <md-divider></md-divider>
+     <md-content>
+         <md-table-container>
+             <table md-table md-progress="Carworkshop.isLoading">
+                 <thead md-head>
+                     <tr md-row>
+                         <th md-column>Origen-Destino</th>
+                         <th md-column>Precio</th>
+                         <th md-column>Acciones</th>
+                     </tr>
+                 </thead>
+                 <tbody md-body>
+                     <tr md-row md-auto-select ng-repeat="RouteDB in RouteExample.RoutesOnDB" ng-click="RouteExample.Edit(RouteDB)">
+                         <td md-cell><p>{{ RouteDB.origin }} - {{RouteDB.destiny}}</p></td>
+                         <td md-cell><p>{{RouteDB.price}}</p></td>
+                         <td md-cell>
+                             <md-icon md-svg-icon="delete" aria-label="delete" ng-click="RouteExample.Delete(RouteDB)" class="md-secondary md-hue-3"></md-icon>
+                         </td>
+                     </tr>
+                 </tbody>
+             </table>
+         </md-table-container>
+         <md-table-pagination md-limit="10" md-page="1" md-total="{{RouteExample.RoutesOnDB.length}}" md-trigger="onPaginationChange"></md-table-pagination>
+
+     </md-content>
+
+
+ </section>

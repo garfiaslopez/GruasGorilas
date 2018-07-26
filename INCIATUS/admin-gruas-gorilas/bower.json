@@ -1,0 +1,17 @@
+{
+  "name": "Gruas Gorilas WebPage",
+  "description": "Gruas Gorilas WebPage & Control Panel.",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Jose Garfias Lopez (@garfiaslopez)",
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-route": "1.5.0",
+    "angular-material": "~1.0.5",
+    "angular-material-icons": "~0.6.0",
+    "angular-material-data-table": "~0.9.11",
+    "moment": "~2.10.6",
+    "md-color-picker": "^0.2.6",
+    "ng-image-input-with-preview": "^0.0.6"
+  }
+}

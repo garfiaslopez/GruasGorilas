@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/e2179c724fcbd6fc88464ae8a604aba3a38f4e99/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3238db5f8dcb1851c1de737a8c1f74f76cbcc2a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.android/build-cache/e93f3a5a8a51707c3e4e53ee54445415df64d17d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa84a425c57380460f2252327cbe6f92f773c458">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/classes_8d0c19aba6e4440447e01609cd32fc11b2a125fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.android/build-cache/15b36837a902a149feb811da8a23df5f0abc5ea5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="10d066cb86e3a37b0b71d52036fd4db7d430dfc6">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/classes_792a9b8e20d2d1611fa2ddb10d3a3e9c71946bc0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_24f4e75609158878e248dec36aecd89443c315ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_8fa5d29a377a6d862815880ca54e8551e653d901/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.zendesk/java-common/1.9/ccaa0823dc484291ab64f3833052783d44014b1/java-common-1.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ccaa0823dc484291ab64f3833052783d44014b1">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/java-common-1.9_c2542e4bd6f2f6005a260287d167295da7be1814/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="142e99b4afe745b9e2818af09d0d72b249687072">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dd9436c56ef5a103fd1f7630d6039f427dc0e8b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/0.7.0/ce278c97bc9f74c7945d647f6d441d6013163362/socket.io-client-0.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce278c97bc9f74c7945d647f6d441d6013163362">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/socket.io-client-0.7.0_1523bd649f23b8de3e34b4c9fd56ca329fd6ba92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/httpclient-4.3.6_497f2d118e8404fe21541588d4091ad2a9a8425f/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.android/build-cache/283c344277de3a5fcdd9277d4dadfa4750b8e2cf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a8a16e6b1f740579cd6fa88d205c5c7308f4eee">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/classes_e8899126c345f25a42d1c661bccab1a905ac3a92.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/67a035022154c158ee0104dd81e8abf908c99582/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9b5ffafb0602560fdcb69e2bcf99ebdf209c780/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/103ebc52967dc8aa8eb959eaa6a11ccc13f139ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f8125f959c7f7f098ce4832b9499b0fb9a62b1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/bd97c49fc4e62b7f43df805dd3d41c0dd22958ba/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7046a6d298ec93adb38b35fca7eab3fa9df702e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/e94f8df0c5d29df179cbf1fd7a07c14d978f60fe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15a3e65c92d3cde64c725dba8d590a1123d2d213">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_786d113a66b591c61cceb32417f56657b0ffe166/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_a6310d4099632aaa5266141bec0e670583ae8b51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/4ccf4a9c5c40bd499cae71357cb23059a6996cb1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_74c338e9a79c94605a1f076abc9f284e860b942f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_64e8d8ef2ca100833bb306b2855ab24077349daf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/cad58d3fd9c1a07cc12234b93a773fd8e4398102/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_65f8d09f878f99624479e9d0319ab3499eef524a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/d8a4bd3ef64f9a4c9dae1296e2bc5d7dfd3a71ac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="264f0bc4c0680cfe7a60fea1f12a43f1ab48e7c8">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2cd553780c1005a237c9c06911a1bb6742cd45d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/e93f3a5a8a51707c3e4e53ee54445415df64d17d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa84a425c57380460f2252327cbe6f92f773c458">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d0c19aba6e4440447e01609cd32fc11b2a125fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2f740bf69834cfad02da156bf18945ae92458e9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.0.1/bd9b51a0188fc8f14bf840a0d326755545206116/okhttp-ws-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd9b51a0188fc8f14bf840a0d326755545206116">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.0.1_63123da61407420b2c84af90fd147494401af20b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_fd937385ae19a2e36f9f2d93174d01831fa58c04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/3c331c99c971163fa58cc4e00a2f5b8121734fde/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6d29c9ff46babdd773584fea012a77d606cfa013/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/3cf57365abb0022083e0a81852644b91330d47db/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_08d61f58c42cda4abe447721bc94dd0536cb134f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/65d43a8dd998fc9feaab16abc5ba837bbedc5810/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf16220db9128d91a215aedc739584181d5ca6a4">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e89d9cc6c142896451a03978e39a5d9188a8826d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/151f4a1e2123c0afe16bfec5e186ca230ab6dd6e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5b9335021695eff057e9fbdfa23017f17e97042d">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_728bd3d507f60a19f1e3a4c61644c6e3539c8d94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/b1d90d03e13be502b384b7f52f4c3b4d64c3e431/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1ed15351303e57f1828face7d96beeafbb209e1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/f6f574795cda7867bbf15b2bd10adab1d87ddf30/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d72ec19e1bae2ca82af626b4d8f7e031cba66ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/904b39d5eac952e3ee3c477bb56ca4ed6bec79df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c1c97cdda3dcbbc81e63b873af4a6aa56e4e1532/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/8cb83db6d534a9af881fe645322c3ff9f2ec059b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b24439adaab7943779be0af63456d1ac3b008d8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/15b36837a902a149feb811da8a23df5f0abc5ea5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="10d066cb86e3a37b0b71d52036fd4db7d430dfc6">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_792a9b8e20d2d1611fa2ddb10d3a3e9c71946bc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/picasso-2.5.2_24f4e75609158878e248dec36aecd89443c315ef.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/879d8668cd6c3a59063eebacd5c8f38f41a4d7e4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_def8efe5cae6022c5d96b954a23caa86bb9c5e85/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.zendesk/java-common/1.9/ccaa0823dc484291ab64f3833052783d44014b1/java-common-1.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ccaa0823dc484291ab64f3833052783d44014b1">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/java-common-1.9_c2542e4bd6f2f6005a260287d167295da7be1814.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/b7f352215846fbd45d05497361d30cd7c9274f78/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e018e35378100e09848ac8f78d454b8ba480a8b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/283c344277de3a5fcdd9277d4dadfa4750b8e2cf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a8a16e6b1f740579cd6fa88d205c5c7308f4eee">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e8899126c345f25a42d1c661bccab1a905ac3a92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_1761aa1a16d918d0345c5fe06c137512eeb3be1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-async-http-1.4.9_647444bd0133090dfcf6f56d0af52cd610f73b30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/0.7.0/c1b1d30e2d2231b2eae1438a44943a409b976dac/engine.io-client-0.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b1d30e2d2231b2eae1438a44943a409b976dac">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-0.7.0_b700ee946faa9b841c7ba13877bc18b9a6ab6c47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/3335bef222bbea9d3572d725e8d3113693a58245/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_32d2e3801d2a0ba9835065a6e78daf908bb95705/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/147421bb90852e5a4c8828c120320a5cf273515d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c47ee03cee7453d42ac0826acd81b263be4d4eb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/d421344f04475ce36e31a1dfdfe8c78055b36b3d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d900f2a1ff098cac8befe6c023d723e9afb154be">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e553412ec3fb3102c92052a4b446eb4cce2192a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/pre-dexed/release/gson-2.7_a6310d4099632aaa5266141bec0e670583ae8b51.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/2f765feab7767dcfb50b066e0de039d353f0b20e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e6970f0554f9508c041f1f6960af15cc888c9f35">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ffbc4caf8a1767210cfc2a4e39df931a73b10316/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/1.2.0/5e4042f9e0d39e0d01d4a8661d01e24995b2cbef/realm-annotations-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e4042f9e0d39e0d01d4a8661d01e24995b2cbef">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-annotations-1.2.0_eb87b3451027c6980c69c4359b288461d5be659b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.0.1_b95531d6bac9a42f9f3877147c1810b1219ed915/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/de39009d9efa64da0f0b141f82338d89622f4b9a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="338ae72fcdfcdc32afd7b3e616403547a64ec672">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_199ebc0bc84877b0f7ddb914d0f1440c97fd977f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/272bc089005a942f06839974763609832fbe6948/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a78bfd2ec508b123ee7c03f4006ba7996ef9a8dc">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cb56c25498907a4701c1e9b2d18348ca5db7bc1f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/139ffe736a7f83f6ccf5e0a0a74e3186f967fe5c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0dbc8f29477b0625517e85b441eb8d552a9a5d28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/56564385c5181ca1253af600bad46cef743f68c6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_85a360e0aab4c6a89ea19b98c9f861984110f8fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/9b50ad49fab2b88b4e3921f4a774c4a80dc3ccfd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_32d2806f43321db4f94aaf0514bebb76ea9b6e64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/.android/build-cache/b23696f4a0f679a417a1eb70524a7e46f94affbe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/home/alejandro/Workspace/Bitbucket/Android/gruas-gorilas-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1b48df84a112b2de5d00265156fc339624715324/classes.dex" />
+    </item>
+
+</items>

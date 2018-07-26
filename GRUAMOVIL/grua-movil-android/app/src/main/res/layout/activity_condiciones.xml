@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gargui3.gruasgorilas.Condiciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/siguienteProceso">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="@string/estado"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/perfectoAuto"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="perfecto"
+                android:gravity="center_vertical"
+                android:text="@string/perfecto"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/descompuestoAuto"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="descompuesto"
+                android:gravity="center_vertical"
+                android:text="@string/descompuesto"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/siniestroAuto"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="siniestro"
+                android:gravity="center_vertical"
+                android:text="@string/siniestro"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="@string/condicionesAuto"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/libreRuedas"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="ruedasGiran"
+                android:gravity="center_vertical"
+                android:text="@string/ruedasgiran"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/faltanRuedas"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="sinRuedas"
+                android:gravity="center_vertical"
+                android:text="@string/faltanruedas"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/sinLlaves"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="sinLlaves"
+                android:gravity="center_vertical"
+                android:text="@string/sinllaves"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorThirdGary" />
+
+            <TextView
+                android:id="@+id/fallaMotor"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:onClick="fallaMotor"
+                android:gravity="center_vertical"
+                android:text="@string/fallamotor"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/siguienteProceso"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center|bottom"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:text="@string/btnGuardar"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextWhite"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

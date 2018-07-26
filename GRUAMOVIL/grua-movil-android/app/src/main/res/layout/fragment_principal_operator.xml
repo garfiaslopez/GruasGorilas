@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.fragment_principal">
+
+    <LinearLayout
+        android:id="@+id/linearCajas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNotice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorTextWhite"
+            android:background="@color/colorAccent"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="@string/resumen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cajas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearCajas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:paddingTop="30dp"
+            android:background="@color/colorPrimaryYellow"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorTextWhite"
+                android:text="@string/numServicios"/>
+
+            <TextView
+                android:id="@+id/serviciosDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorTextWhite"
+                android:text="#"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:paddingTop="30dp"
+            android:background="@color/colorPrimaryGary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorTextWhite"
+                android:text="@string/total"/>
+
+            <TextView
+                android:id="@+id/totalDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorTextWhite"
+                android:text="$0.0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disponibilidad"
+        android:id="@+id/disponibilidad"
+        android:textSize="20dp"
+        android:checked="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

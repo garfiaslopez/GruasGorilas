@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="OrderTableViewCell" customModule="GorilasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vnu-CC-wO5">
+                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Tsa-8B-Fce"/>
+                            <constraint firstAttribute="width" constant="25" id="f3v-dB-EF2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automovil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk8-hj-oMy">
+                        <rect key="frame" x="41" y="8" width="271" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="JL5-cJ-08y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.67058825489999996" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chevy 2010 Rojo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRO-q8-jfw">
+                        <rect key="frame" x="40" y="33" width="272" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xl4-6R-u3d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vnu-CC-wO5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2iC-Tw-o3q"/>
+                    <constraint firstItem="xRO-q8-jfw" firstAttribute="top" secondItem="Gk8-hj-oMy" secondAttribute="bottom" id="FJh-Sd-5oD"/>
+                    <constraint firstAttribute="trailing" secondItem="xRO-q8-jfw" secondAttribute="trailing" constant="8" id="L20-OG-Hih"/>
+                    <constraint firstAttribute="trailing" secondItem="Gk8-hj-oMy" secondAttribute="trailing" constant="8" id="SM7-TA-Dje"/>
+                    <constraint firstItem="Gk8-hj-oMy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WzO-ZJ-Maf"/>
+                    <constraint firstItem="vnu-CC-wO5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="af7-Zg-tSy"/>
+                    <constraint firstItem="Gk8-hj-oMy" firstAttribute="leading" secondItem="vnu-CC-wO5" secondAttribute="trailing" constant="8" id="shO-1k-T4I"/>
+                    <constraint firstItem="xRO-q8-jfw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="vRG-Ro-pie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IconImageView" destination="vnu-CC-wO5" id="WZI-PS-UcH"/>
+                <outlet property="SubtitleLabel" destination="xRO-q8-jfw" id="0L6-Eo-Jca"/>
+                <outlet property="TitleLabel" destination="Gk8-hj-oMy" id="26f-3M-iuI"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="414"/>
+        </tableViewCell>
+    </objects>
+</document>

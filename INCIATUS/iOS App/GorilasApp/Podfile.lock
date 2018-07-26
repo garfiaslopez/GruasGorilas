@@ -1,0 +1,126 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Caishen (2.0.1)
+  - CardIO (5.4.1)
+  - DatePickerDialog (1.1.7)
+  - FBSDKCoreKit (4.23.0):
+    - Bolts (~> 1.7)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Analytics (3.1.0):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.1.0):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleAnalytics (3.17.0)
+  - GoogleMaps (2.3.0):
+    - GoogleMaps/Maps (= 2.3.0)
+  - GoogleMaps/Base (2.3.0)
+  - GoogleMaps/Maps (2.3.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.3.0):
+    - GoogleMaps/Base (= 2.3.0)
+  - GoogleSignIn (4.0.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMOAuth2 (1.1.4):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.10):
+    - GTMSessionFetcher/Full (= 1.1.10)
+  - GTMSessionFetcher/Core (1.1.10)
+  - GTMSessionFetcher/Full (1.1.10):
+    - GTMSessionFetcher/Core (= 1.1.10)
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
+  - NVActivityIndicatorView (3.6.1)
+  - Socket.IO-Client-Swift (10.0.0)
+  - SwiftSpinner (1.2.1)
+  - SwiftyJSON (3.1.4)
+  - UrbanAirship-iOS-SDK (7.2.2)
+  - youtube-ios-player-helper (0.1.6)
+  - ZDCChat (1.3.4.1):
+    - ZDCChat/API (= 1.3.4.1)
+    - ZDCChat/Localization (= 1.3.4.1)
+    - ZDCChat/UI (= 1.3.4.1)
+  - ZDCChat/API (1.3.4.1)
+  - ZDCChat/Localization (1.3.4.1)
+  - ZDCChat/UI (1.3.4.1):
+    - ZDCChat/API
+
+DEPENDENCIES:
+  - Alamofire
+  - Caishen
+  - CardIO
+  - DatePickerDialog
+  - FBSDKCoreKit
+  - Google/Analytics
+  - Google/SignIn
+  - GoogleMaps
+  - GooglePlaces
+  - Material (~> 2.0)
+  - NVActivityIndicatorView
+  - Socket.IO-Client-Swift
+  - SwiftSpinner
+  - SwiftyJSON
+  - UrbanAirship-iOS-SDK (= 7.2.2)
+  - youtube-ios-player-helper (~> 0.1.4)
+  - ZDCChat
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Caishen: e27ae02c0e4a30f3e2442730e7ee144d9e6adc72
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
+  FBSDKCoreKit: d7829f5a69901cd7296105328e4c3c3fc7da6518
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleMaps: 340a6a0bebd17c2db8abcd3921976c7c53c86cb8
+  GooglePlaces: 74d322c74184ea4576184089b496d291cf0dcd38
+  GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  Socket.IO-Client-Swift: 9c5b4e5e76e30e1b9a1804c40e11dad0a002b1a4
+  SwiftSpinner: 62a28bbb4035f252a1e91b0e17fc40bdbbfa0aab
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UrbanAirship-iOS-SDK: c55430986126be28b1735bc3efefa5b902ac8b0e
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+  ZDCChat: 7e0bb2a8b01909aad69f15b87436cb7e71ff33d5
+
+PODFILE CHECKSUM: 1b8eb4cf10d887d88c7ce52172c54172cc430a61
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gargui3.gruasgorilas.SeleccionPedido">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtOrigen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="@string/origen"/>
+
+        <TextView
+            android:id="@+id/origen"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorTextWhite"
+            android:background="@drawable/round_form_yellow"/>
+
+        <TextView
+            android:id="@+id/txtDestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="@string/destino"/>
+
+        <TextView
+            android:id="@+id/destino"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorTextWhite"
+            android:background="@drawable/round_form_yellow"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="18dp"
+            android:text="@string/infoAdicional"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorThirdGary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/txtAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="@string/auto"/>
+
+            <TextView
+                android:id="@+id/seleccionarAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="@string/seleccionar"
+                android:lines="1"
+                android:onClick="seleccionarAuto"
+                android:gravity="end"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorThirdGary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/txtCondicionesAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="@string/condicionesAuto"/>
+
+            <TextView
+                android:id="@+id/seleccionarCondicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="@string/seleccionar"
+                android:lines="1"
+                android:onClick="seleccionarCondicion"
+                android:gravity="end"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorThirdGary" />
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabModoPago">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ahora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ahoraDescripcion"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@mipmap/ic_action_calendar_day"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/despues"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fechaCotizacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@mipmap/ic_action_calendar_day"/>
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/siguienteProceso"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center|bottom"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:text="@string/continuarPedido"
+            android:textSize="20dp"
+            android:onClick="solicitar"
+            android:textColor="@color/colorTextWhite"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

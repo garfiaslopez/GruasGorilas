@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <section flex layout="column">
+
+        <md-subheader class="md-primary">Enviar Aviso</md-subheader>
+
+        <div>
+
+            <div flex layout="row" layout-sm="column">
+
+                <div flex="40" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <label>Titulo</label>
+                        <input ng-model="Notice.ModelObject.title">
+                    </md-input-container>
+                </div>
+
+                <div flex="60" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>Descripcion</label>
+                        <input ng-model="Notice.ModelObject.description">
+                    </md-input-container>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div flex layout="row" layout-align="space-around center">
+            <md-button id="primarybtn" ng-click="Notice.Submit()" class="md-raised md-primary">Guardar</md-button>
+            <md-button id="secondarybtn" ng-click="Notice.CancelEditing()" class="md-raised md-accent" ng-if="Notice.isEditing.flag" >
+            Cancelar</md-button>
+        </div>
+
+        <br>
+        <md-subheader class="md-primary">Avisos pasados</md-subheader>
+        <md-divider></md-divider>
+
+        <md-content>
+            <md-table-container>
+                <table md-table md-progress="Notice.isLoading">
+                    <thead md-head>
+                        <tr md-row>
+                            <th md-column>Titulo</th>
+                            <th md-column>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row md-auto-select ng-repeat="ObjDB in Notice.ModelObjectDB" ng-click="Notice.Edit(ObjDB)">
+                            <td md-cell>{{ObjDB.title}}</td>
+                            <td md-cell>{{ObjDB.description}}</td>
+                            <td md-cell>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="Notice.Delete(ObjDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{Notice.ModelObjectDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+    </section>

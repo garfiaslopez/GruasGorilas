@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <section layout="column">
+
+        <md-subheader id="subtitle"  class="md-primary">Agregar Administrador</md-subheader>
+
+        <div >
+            <div flex layout="row" layout-sm="column" layout-align="space-around">
+                <div flex="40" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <label>Username</label>
+                        <input ng-model="UserAdmin.Usuario.username">
+                    </md-input-container>
+                </div>
+
+                <div flex="60" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>Password</label>
+                        <input ng-model="UserAdmin.Usuario.password">
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+
+
+        <div flex layout="row" layout-align="space-around center">
+            <section>
+                <md-button id="primarybtn" ng-click="UserAdmin.Submit()" class="md-raised md-primary">Guardar</md-button>
+                <md-button id="secondarybtn" ng-click="UserAdmin.CancelEditing()" class="md-raised md-accent" ng-if="UserAdmin.isEditing.flag" >
+                Cancelar</md-button>
+            </section>
+
+        </div>
+
+
+        <br>
+        <md-subheader class="md-primary">Administradores Existentes</md-subheader>
+        <md-divider></md-divider>
+
+        <md-content>
+            <md-table-container>
+                <table md-table md-progress="UserAdmin.isLoading">
+                    <thead md-head>
+                        <tr md-row>
+                            <th md-column>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row md-auto-select ng-repeat="UserAdminDB in UserAdmin.UsersAdminOnDB" ng-click="UserAdmin.Edit(UserAdminDB)">
+                            <td md-cell>{{UserAdminDB.username}}</td>
+                            <td md-cell>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="UserAdmin.Delete(UserAdminDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{UserAdmin.UsersAdminOnDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+    </section>

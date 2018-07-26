@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<div ng-cloak>
+    <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+
+            <md-tab label="CUPONES">
+                <md-content class="md-padding">
+
+                    <md-subheader id="subtitle"  class="md-primary">Cupones</md-subheader>
+                    <div flex layout="row" layout-sm="column" layout-align="space-around center">
+
+                        <div flex="20">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Codigo</label>
+                                <input ng-model="Coupon.ModelObject.code">
+                            </md-input-container>
+                         </div>
+
+                        <div flex="40">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                 <label>Descripción</label>
+                                 <input ng-model="Coupon.ModelObject.description">
+                             </md-input-container>
+                         </div>
+
+                         <div flex="20" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                 <label>Descuento</label>
+                                 <input ng-model="Coupon.ModelObject.discount">
+                             </md-input-container>
+                         </div>
+                     </div>
+
+                     <div flex layout="row" layout-sm="column" layout-align="space-around center">
+
+                         <div flex flex-sm="100" class="md-block" layout-align="center center" >
+                             <md-datepicker ng-model="Coupon.ModelObject.expiration" md-placeholder="Ingresar Fecha"></md-datepicker>
+                         </div>
+
+                          <div flex flex-sm="100" class="md-block" >
+                              <md-checkbox ng-model="Coupon.ModelObject.isActive" aria-label="Checkbox 1">
+                                Activo
+                              </md-checkbox>
+                          </div>
+                      </div>
+
+                     <div flex layout="row" layout-align="space-around center">
+                         <md-button id="primarybtn" ng-click="Coupon.Submit()" class="md-raised md-primary">Guardar Cupon</md-button>
+                         <md-button id="secondarybtn" ng-click="Coupon.CancelEditing()" class="md-raised md-accent" ng-if="Coupon.isEditing.flag" >
+                         Cancelar</md-button>
+                     </div>
+
+                     <br>
+                     <md-subheader class="md-primary">Cupones Existentes</md-subheader>
+                     <md-divider></md-divider>
+
+                     <md-content>
+                         <md-table-container>
+                             <table md-table md-progress="User.isLoading">
+                                 <thead md-head>
+                                     <tr md-row>
+                                         <th md-column>Codigo</th>
+                                         <th md-column>Descripcion</th>
+                                         <th md-column>Descuento ($)</th>
+                                         <th md-column>Expiracion</th>
+                                         <th md-column>Activo</th>
+                                         <th md-column>Acciones</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody md-body>
+                                     <tr md-row md-auto-select ng-repeat="ObjDB in Coupon.ModelObjectDB" ng-click="Coupon.Edit(ObjDB)">
+                                         <td md-cell>{{ObjDB.code}}</td>
+                                         <td md-cell>{{ObjDB.description}}</td>
+                                         <td md-cell>{{ObjDB.discount}}</td>
+                                         <td md-cell>{{ObjDB.expiration}}</td>
+                                         <td md-cell>{{ObjDB.isActive}}</td>
+                                         <td md-cell>
+                                             <md-icon md-svg-icon="delete" aria-label="delete" ng-click="Coupon.Delete(ObjDB)" class="md-secondary md-hue-3"></md-icon>
+                                         </td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </md-table-container>
+                         <md-data-table-pagination md-limit="10" md-page="1" md-total="{{Coupon.ModelObjectDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+                     </md-content>
+
+
+                </md-content>
+            </md-tab>
+
+            <md-tab label="PROMOCIONES">
+                <md-content class="md-padding">
+
+                    <div flex layout="row" layout-align="space-around center">
+
+                        <div flex="30" layout="column">
+                            <md-subheader class="md-primary">Selecciona un taller</md-subheader>
+
+                            <md-list ng-cloak>
+                                <md-list-item ng-repeat="ObjDB in Coupon.CarworkshopDB" ng-click="Coupon.SelectCarworkshop(ObjDB)">
+                                    <p> {{ ObjDB.name }} </p>
+                                    <md-checkbox ng-model="ObjDB.selected" aria-label="Checkbox 1"></md-checkbox>
+                                </md-list-item>
+                            </md-list>
+
+                        </div>
+
+                        <div flex="70" layout="column">
+
+                            <div >
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Descripción</label>
+                                    <input ng-disabled="!Coupon.SelectedCarworkshop" ng-model="Coupon.Promo.description">
+                                </md-input-container>
+                            </div>
+
+                            <div>
+                                <md-checkbox ng-disabled="!Coupon.SelectedCarworkshop" ng-model="Coupon.Promo.active" aria-label="Checkbox 1">
+                                    Activo
+                                </md-checkbox>
+                            </div>
+                            <br>
+                            <div flex layout="row" layout-align="space-around center">
+
+                                <md-button ng-click="Coupon.SavePromo()" class="md-raised md-primary">Guardar Promocion</md-button>
+                                <md-button ng-click="Coupon.CancelEditingPromo()" class="md-raised md-accent" ng-if="Coupon.SelectedCarworkshop">Cancelar</md-button>
+                                <md-button ng-click="Coupon.DeletePromo()" class="md-raised md-accent" ng-if="Coupon.SelectedCarworkshop" >Eliminar</md-button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </md-content>
+
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

@@ -1,0 +1,299 @@
+<resources>
+    <!--Text of App name-->
+    <string name="app_name">Grúa Móvil</string>
+    <!--Text of Settings-->
+    <string name="action_settings">Ajustes</string>
+    <!--Text of placeholder password in login and register-->
+    <string name="textInputPassword">Contraseña</string>
+    <!--Text of placeholder email in login and register-->
+    <string name="textInputCorreo">Correo Electrónico</string>
+    <!--Text of placeholder cellphone in register-->
+    <string name="textInputCellphone">Telefono Celular</string>
+    <string name="textInputNombre">Nombre</string>
+    <!--Text of button login-->
+    <string name="loginTitle">Iniciar Sesión</string>
+    <!--Title of register view-->
+    <string name="title_activity_register">Registro</string>
+    <!--Title of button register-->
+    <string name="okRegistro"><u>Crear mi Cuenta</u></string>
+    <!--Text of condiciones in register-->
+    <string name="condiciones">*Al registrarte aceptas nuestras politicas de privacidad, no te preocupes, cuidamos sus datos.</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--Titles of nevigation bars-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="principal">Solicitar grúa</string>
+    <string name="reservaciones">Cotizaciones y Servicios programados</string>
+    <string name="catalogo_afiliados">Aliados Estrategicos</string>
+    <string name="tarifas">Tarifas</string>
+    <string name="historial">Historial</string>
+    <string name="datosPago">Datos de Pago</string>
+    <string name="perfil">Perfil</string>
+    <string name="acercade">Acerca de</string>
+    <string name="ayuda">Soporte y comentarios</string>
+    <string name="logout">Cerrar Sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Textos Generales-->
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnAgregar">Agregar</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnSend">Enviar</string>
+    <string name="btnCotizar">Cotización</string>
+    <string name="btnCotizacion">Cotizar</string>
+    <string name="btnCotizacionPedido">Realizar Cotización</string>
+    <string name="seleccionar">Seleccionar</string>
+
+    <string name="btnCotizacionAceptar">Aceptar Cotización</string>
+    <string name="txtDescripcionCotizar">Descripción de Cotización</string>
+    <string name="fechaPedido">Fecha</string>
+
+    <!--Content login-->
+    <string name="olvideContrasena">Olvido su Contraseña</string>
+    <string name="llamarCabina">Llamar a Cabina</string>
+    <string name="descripcionLogin">Grúa movil le conecta con nuestros operadores en cualquier momento y en cualquier lugar.</string>
+
+    <!--Content register-->
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="rellenarCamposRegister">Rellena los siguientes campos para subir a bordo.</string>
+    <string name="singup">Registrarme</string>
+    <string name="tienesGrua"><u>Información para empresarios de Grúas</u></string>
+
+    <!--Menu perfil-->
+    <string name="txtEditarTitulo">EDITAR USUARIO</string>
+    <string name="txtNombreUsuario">Nombre de Usuario</string>
+    <string name="txtCorreoUsuario">Correo de Usuario</string>
+    <string name="txtTelefonoUsuario">Telefono de Usuario</string>
+    <string name="txtContrasenaActual">Contraseña Actual</string>
+    <string name="txtContrasenaNueva">Nueva Contraseña</string>
+    <string name="txtNuevoVehiculoTitulo">Agregar Auto</string>
+    <string name="txtMarcaVehiculo">Marca</string>
+    <string name="txtModeloVehiculo">Modelo (Año)</string>
+    <string name="txtPlacasVehiculo">Placas</string>
+    <string name="txtColorVehiculo">Color</string>
+
+    <string name="ultimaCotizacion">Ultima Cotizacion</string>
+    <string name="agendados">Agendados</string>
+
+    <string name="quoted">Su cotización se ha realizado, aparecerá en su menú de cotizaciones.</string>
+    <string name="schedule">Su servicio ha sido agendado, su operador te contactará antes del servicio el día y hora indicados.</string>
+
+    <string name="txtSinServicio">Sin Servicio</string>
+
+    <!--Fragment pedir vendor-->
+    <string name="disponibilidad">Disponibilidad para servicio    </string>
+    <string name="total">Total</string>
+    <string name="numServicios">Servicios</string>
+    <string name="resumen">Resumen del Día</string>
+
+    <!--Menu ayuda-->
+    <string name="txtAyuda">En caso de algun problema, por favor haznoslo saber</string>
+    <string name="txtTitle">Asunto</string>
+    <string name="txtDescribe">Mensaje</string>
+
+
+    <!--Menu cupones-->
+    <string name="ingresarCupon">Ingrese cupon a canjear:</string>
+    <string name="numCupon">Número cupón</string>
+    <string name="title_activity_nuevo_vehiculo">NuevoVehiculo</string>
+
+    <!--Activity Seleccion Pedido-->
+    <string name="origen">Origen</string>
+    <string name="destino">Destino</string>
+    <string name="auto">Auto</string>
+    <string name="condicionesAuto">Condiciones de su Auto</string>
+    <string name="continuarPedido">Continuar</string>
+    <string name="infoAdicional">Información Adicional</string>
+    <string name="ahoraDescripcion">Lo más pronto posible.</string>
+    <string name="btnReservacion">Reservación</string>
+
+
+    <!--Activity Condiciones Auto-->
+    <string name="estado">Estado en General</string>
+    <string name="perfecto">Perfecto (Solo Traslado)</string>
+    <string name="descompuesto">Descompuesto</string>
+    <string name="siniestro">Siniestro (Choque)</string>
+    <string name="ruedasgiran">Ruedas Giran Libres</string>
+    <string name="faltanruedas">Falta una o más ruedas</string>
+    <string name="sinllaves">No tengo llaves de encendido</string>
+    <string name="fallamotor">Falla de Motor</string>
+
+    <!--Activity Buscando-->
+    <string name="buscandoOperador">Estamos buscando a un operador</string>
+
+    <!--Activity Descripcion Orden-->
+    <string name="tituloOrden">DESCRIPCIÓN DE ORDEN</string>
+    <string name="nombreOperador">Nombre del Operador</string>
+    <string name="origenViaje">Origen</string>
+    <string name="destinoViaje">Destino</string>
+    <string name="automovil">Automovil</string>
+    <string name="ordenAceptada">Orden aceptada, en un momento su operador se comunicará con usted</string>
+
+    <!--Activity Descripcion Servicio-->
+    <string name="tituloServicio">DESCRIPCIÓN DE SERVICIO</string>
+    <string name="totalViaje">Total</string>
+    <string name="cancelarOrden">Cancelar</string>
+    <string name="confirmarOrden">Confirmar</string>
+    <string name="seleccionEfectivo">Haz seleccionado la opcion de efectivo</string>
+    <string name="pedirAhora">Pedir Ahora</string>
+    <string name="finalizarCotizacion">Finalizar Cotización</string>
+    <string name="txtAgendar">Agendar</string>
+
+    <!--Activity Calificar-->
+    <string name="calificarTitulo">Calificar</string>
+
+    <!--Activity aceptar orden operador-->
+    <string name="nombreCliente">Nombre del Cliente</string>
+    <string name="descripcionOrden">Descripción de Orden</string>
+
+    <!--Acitvity asignar precio-->
+    <string name="precioTitulo">Ingresar costo del servicio</string>
+    <string name="confirmarCosto">Confirmar Costo</string>
+    <string name="llamar">Aceptar</string>
+    <string name="txtRealizarPedido">Solicitar</string>
+
+    <!--Activity esperando cliente-->
+    <string name="esperandoCliente">Esperando la desición del cliente</string>
+
+    <!--Activity arrivng operator-->
+    <string name="enganchar">Auto Enganchado</string>
+    <string name="grua">Grúa</string>
+    <string name="nombreGruyeroServicio">Nombre del Operador</string>
+
+    <!--Activity finalizar viaje-->
+    <string name="finalizarViaje">Finalizar Viaje</string>
+
+    <!--Activity recuperar contraseña-->
+    <string name="tituloRecuperar">Recuperar Contraseña</string>
+    <string name="leyenda">Por favor ingrese el correo electronico registrado y el sistema le enviara una contraseña temporal.</string>
+    <string name="btnRecuperar">Recuperar</string>
+    <string name="correoElectronico">Correo Electrónico</string>
+
+    <!--Activity Registrar Grua-->
+    <string name="tituloRegistrarGrua">¡Contactanos!</string>
+    <string name="leyendaGruaNueva">Empresarios de grúas les interesa subir su flotilla a nuestra plataforma, por favor llene el siguiente formulario</string>
+    <string name="nombreGruyero">Nombre Completo</string>
+    <string name="telefonoCabinaGruyero">Teléfono Cabina</string>
+    <string name="correoGruyero">Correo Electrónico</string>
+    <string name="empresaGruyero">Nombre de Empresa</string>
+    <string name="ciudadGruyero">Ciudad</string>
+    <string name="numGruas"># Grúas</string>
+    <string name="comentariosGruyero">Comentarios:</string>
+
+    <!--Fragment acerca de-->
+    <string name="descripcionAcerca">Dedicado al traslado de vehiculos dentro de la República Mexicana.\nSomos la primera franquicia de traslados a nivel mundial.</string>
+    <string name="disponibleEn">Disponible en</string>
+    <string name="comparteAmigo">COMPARTE CON UN AMIGO</string>
+    <string name="txtTutorial">Tutorial</string>
+    <string name="txtCalificanos">Calificanos</string>
+    <string name="calificaRepartidor">POR FAVOR CALIFIQUE A NUESTRO OPERADOR</string>
+
+    <string name="enCamino">En Camino</string>
+    <string name="servicioProceso">La Grúa a llegado</string>
+
+    <!--Dialog Mensaje-->
+    <string name="txtMensaje">Mensaje</string>
+    <string name="expired">La orden ha expirado</string>
+    <string name="rejected">La orden se rechazo</string>
+    <string name="alreadytaked">Otro operador tomo la orden</string>
+
+    <!--Dialog llamar-->
+    <string name="txtLlamarTitulo">Llamada</string>
+    <string name="txtLlamarCentral">LO SENTIMOS, POR EL MOMENTO NO TENEMOS EQUIPOS DISPONIBLES POR FAVOR INTENTE MÀS TARDE</string>
+    <string name="telefonoCentral">5556839645</string>
+    <string name="txtNavegacion">Navegación</string>
+
+
+    <!--Fragment datos pago-->
+    <string name="txtAgregarTarjeta">AGREGAR TARJETA</string>
+    <string name="txtCVC">CVC</string>
+    <string name="txtNumTarjeta">Número de Tarjeta</string>
+    <string name="txtNombre">Nombre propietario</string>
+    <string name="agregarTarjeta">Agregar Tarjeta</string>
+    <string name="mes">Mes</string>
+    <string-array name="meses">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="ano">Año</string>
+    <string-array name="anos">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+    </string-array>
+
+    <string-array name="talleres">
+        <item>Todos</item>
+        <item>Talleres Mecanicos</item>
+        <item>Gomerias</item>
+        <item>Repuesteras</item>
+        <item>Estaciones de Servicio</item>
+        <item>Estacionamientos</item>
+        <item>Farmacias</item>
+        <item>Cerrajeria</item>
+    </string-array>
+
+    <!--Disclaimers-->
+    <string name="terminosDisclaimer">*Al registrarte aceptas nuestros términos y condiciones
+    asi como nuestras politicas de privacidad, no te preocupes cuidamos sus datos.</string>
+    <string name="metodosPagoDisclaimer">*Recuerda que aceptamos, Efectivo, tarjetas, cheques y transferencias.</string>
+    <string name="almacenamientoDisclaimer">*Nosotros no almacenamos ningún dato bancario. El monto máximo por operacion es $2000.00 pesos</string>
+    <string name="tarifasDisclaimer">*Aplica en autos no siniestrados y en sus cuatro ruedas, las tarifas
+    pueden variar si las condiciones, el origen y el destino son diferentes a los reportados, precios con IVA.</string>
+
+    <!--Excepciones-->
+    <string name="camposVaciosException">Favor de rellenar todos los campos</string>
+    <string name="sinConexionException">Favor de conectarse a internet</string>
+    <string name="sinUsuarioException">Favor de conectarse nuevamente</string>
+    <string name="sinServicioException">No hay servicio por el momento, intentelo mas tarde</string>
+    <string name="noCoincidenContrasenaException">No coinciden las contraseñas</string>
+    <string name="correoInvalidoException">El formato de correo es invalido</string>
+    <string name="lugaresNoSelccionadoException">Por favor selecciona lugares para el servicio</string>
+    <string name="seleccionarEstadosException">Favor de seleccionar estados del servicio</string>
+    <string name="seleccionaEstadoGeneralException">Favor seleccionar un estado general</string>
+    <string name="seleccionaCondicionesException">Favor de seleccionar las condiciones</string>
+    <string name="notPaidAcceptedException">No se pudo realizar el pago</string>
+    <string name="precioExcedidoException">Haz excedido el monto máximo de $2000.0</string>
+    <string name="permisoLlamadaException">No cuentas con los permisos suficientes</string>
+    <string name="sinTarjetaException">Por favor seleccionar una tarjeta</string>
+    <string name="notCardMethodException">Lo sentimos no puedes pagar más de $2000 con tarjeta</string>
+
+    <!--Mensajes exitosos-->
+    <string name="guardadoCorrectamente">Se ha guardado correctamente</string>
+    <string name="cashMethod">EL PAGO LO DEBE RECIBIR EL OPERADOR DE GRÙA CON EL METODO INSCRITO POR EL CLIENTE AL SOLICITAR SU SERVICIO </string>
+    <string name="txtConfirmarCompra">CONFIRMAR COMPRA</string>
+    <string name="infoConfirmar">ESTIMADO CLIENTE LE INFORMAMOS QUE LA TARIFA PACTADA PUEDE MODIFICARSE SI EXISTEN CAMBIOS EN EL ORIGEN, DESTINO O  EN LAS CONDICIONES REPORTADAS DEL VEHICULO A TRASLADAR</string>
+    <string name="conectadoServicio">Bienvenido, ahora esta conectado a Grúa Móvil.</string>
+    <!--configuracion-->
+    <!--IP PRODUCCION-->
+    <!--IP Tunel-->
+    <string name="ipaddress">http://192.241.227.34:3000</string>
+    <string name="conektaKey">xxxxxx</string>
+    <string name="googleKey">AIzaSyD605kdM8LFM8lH9lMs72V_JcDAW6MvYiM</string>
+    <string name="keymailgun">key-d3b4220e9454ff1ceb516820dee68cdf</string>
+    <!--<string name="facebook_app_id">343082096071918</string>-->
+
+</resources>

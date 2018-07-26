@@ -1,0 +1,78 @@
+<html ng-app="LoginApp">
+<head>
+    <title>Iniciar Sesion</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+    <meta charset="charset=ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
+    <link rel="stylesheet" type="text/css" href="../bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+    <link rel="stylesheet" type="text/css" href="../public/styles/css/mainStyles.css">
+
+
+</head>
+
+<body >
+
+    <section flex layout="column" ng-controller="LoginController">
+        <md-toolbar id="toolbar" >
+            <h1 layout-align="center center" class="md-toolbar-tools">Iniciar Sesion</h1>
+        </md-toolbar>
+        <br>
+        <br>
+        <div layout="row" layout-align="space-around">
+            <img id="LogoAdmin" layout-align="center center" style="height:200px;width:200px;" ng-src="../public/images/Logo.png" class="md-card-image">
+        </div>
+        <br>
+        <div layout="row" layout-align="space-around">
+            <md-input-container style="width: 300px;" >
+                <md-icon md-svg-icon="user" class="name"></md-icon>
+                <input ng-model="loginData.username" type="text" placeholder="Username" ng-required="true">
+            </md-input-container>
+        </div>
+        <div layout="row" layout-align="space-around">
+            <md-input-container style="width: 300px;">
+                <md-icon md-svg-icon="pass" class="password"></md-icon>
+                <input ng-model="loginData.password" type="password" placeholder="Password" ng-required="true">
+            </md-input-container>
+        </div>
+        <div layout="row" layout-align="space-around">
+            <md-button id="PrimaryButton" ng-click="doLogin(loginData)" class="md-raised md-primary">
+                Iniciar Sesion
+            </md-button>
+        </div>
+    </section>
+
+    <!-- Angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Angular Material Dependencies -->
+    <script src="../bower_components/angular-material/angular-material.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+
+    <!-- Angular Material Other Dependencies -->
+    <script src="../bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="../bower_components/ngFitText/src/ng-FitText.js"></script>
+
+   <!-- Angular Services -->
+    <script type="text/javascript" src="../public/js/services/authService.js"></script>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="../public/js/login.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>

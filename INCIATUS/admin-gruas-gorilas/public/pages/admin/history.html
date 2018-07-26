@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <div flex layout="row" layout-sm="column">
+        <div flex="40" layout="column" flex-sm="100">
+            <md-subheader id="subtitle"  class="md-primary">Filtros</md-subheader>
+            <md-radio-group ng-model="History.Query.filterSelector" ng-change="History.FilterChanged()">
+                <md-radio-button value="0">Hoy</md-radio-button>
+                <md-radio-button value="1">Rango</md-radio-button>
+            </md-radio-group>
+            <md-datepicker ng-disabled="History.DisableRange" ng-model="History.Query.FechaInicio" md-placeholder="Fecha Inicio"></md-datepicker>
+            <md-datepicker ng-disabled="History.DisableRange" ng-model="History.Query.FechaFinal" md-placeholder="Fecha Final"></md-datepicker>
+        </div>
+
+        <div flex="60" layout="column" flex-sm="100">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Franquicia</label>
+                <md-select ng-model="History.Query.group" md-on-open="History.CleanTowsAndOperators()">
+                    <md-option ng-repeat="GroupDB in History.GroupsOnDB" value="{{GroupDB._id}}">
+                        {{GroupDB.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Grua</label>
+                <md-select ng-model="History.Query.tow" md-on-open="History.LoadTows()">
+                    <md-option ng-repeat="TowDB in History.TowsOnDB" value="{{TowDB._id}}">
+                        {{TowDB.plate}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Operador</label>
+                <md-select ng-model="History.Query.operator_id" md-on-open="History.LoadOperators()">
+                    <md-option ng-repeat="OperatorDB in History.OperatorsOnDB" value="{{OperatorDB._id}}">
+                        {{OperatorDB.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <br/>
+            <br/>
+            <div flex layout="row" layout-align="space-around center">
+                <md-button id="primarybtn" ng-click="History.Search()" class="md-raised md-primary">Buscar</md-button>
+            </div>
+            <br/>
+            <br/>
+        </div>
+
+
+    </div>
+    <br>
+    <md-divider></md-divider>
+    <br>
+
+    <md-content>
+        <div>
+
+            <div flex ng-disabled="History.disabledOp" layout="row" layout-align="space-around center">
+                <h4>Conexiones: {{History.operatorConections}} </h4>
+                <h4>Tiempo acumulado total: {{History.time}} Horas</h4>
+            </div>
+            <br />
+            <div flex layout="row" layout-align="space-around center">
+                <h4>Servicios: #{{History.servicesCount}} </h4>
+                <h4>Total: ${{History.servicesTotal}}</h4>
+            </div>
+
+            <md-table-container>
+                <table md-table md-progress="History.isLoading">
+                    <thead md-head>
+                        <tr md-row>
+                            <th md-column>Fecha</th>
+                            <th md-column>ID</th>
+                            <th md-column>Tipo</th>
+                            <th md-column>Usuario</th>
+                            <th md-column>Operador</th>
+                            <th md-column>Origen</th>
+                            <th md-column>Destino</th>
+                            <th md-column>Status</th>
+                            <th md-column>Total</th>
+                            <th md-column>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row md-auto-select ng-repeat="OrderDB in History.OrdersOnDB">
+                            <td md-cell>{{OrderDB.date}}</td>
+                            <td md-cell>{{OrderDB.order_id}}</td>
+                            <td md-cell>{{OrderDB.type}}</td>
+                            <td md-cell>{{OrderDB.user_id.name}}</td>
+                            <td md-cell>{{OrderDB.operator_id.name}}</td>
+                            <td md-cell>{{OrderDB.origin.denomination}}</td>
+                            <td md-cell>{{OrderDB.destiny.denomination}}</td>
+                            <td md-cell>{{OrderDB.status}}</td>
+                            <td md-cell>{{OrderDB.total}}</td>
+                            <td md-cell>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="History.DeleteOrder(OrderDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
+
+            <md-table-pagination md-limit="History.Query.limit" md-options="History.limitOptions" md-page="History.Query.page" md-total="{{History.totalOrdersOnSearch}}" md-on-paginate="History.onPaginate" md-page-select></md-table-pagination>
+
+        </div>
+    </md-content>
+
+    <div flex layout="row" layout-align="space-around center">
+        <md-button id="primarybtn" ng-click="History.PrintTableTickets()" class="md-raised md-primary">Imprimir</md-button>
+    </div>

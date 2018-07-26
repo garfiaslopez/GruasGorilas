@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <section layout="column">
+
+        <md-content>
+            <md-table-container>
+                <table md-table md-progress="User.isLoading">
+                    <thead md-head>
+                        <tr md-row>
+                            <th md-column>#</th>
+                            <th md-column>Nombre</th>
+                            <th md-column>Email</th>
+                            <th md-column>Telefono</th>
+                            <th md-column>Calif</th>
+                            <th md-column>Bloqueado</th>
+                            <th md-column>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row md-auto-select ng-repeat="UserDB in User.UsersOnDB" ng-click="User.Detail(UserDB)">
+                            <td md-cell>{{$index + 1}}</td>
+                            <td md-cell>{{UserDB.name}}</td>
+                            <td md-cell>{{UserDB.email.address}}</td>
+                            <td md-cell>{{UserDB.phone}}</td>
+                            <td md-cell>{{UserDB.rate.average}}</td>
+                            <td md-cell>{{UserDB.blocked}}</td>
+                            <td md-cell>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="User.Delete(UserDB);$event.stopPropagation()" class="md-secondary md-hue-3"></md-icon>
+                                <md-icon md-svg-icon="lock" aria-label="block" ng-click="User.Block(UserDB);$event.stopPropagation()" class="md-secondary md-hue-3"></md-icon>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{UserDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+    </section>

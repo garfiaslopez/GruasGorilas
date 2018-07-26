@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.fragment_principal">
+
+        <com.google.android.gms.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/realizarPedido" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/realizarPedido"
+            android:id="@+id/linearLayout8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTextWhite"
+                    android:orientation="vertical">
+                        <AutoCompleteTextView
+                            android:id="@+id/Direccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:singleLine="true"
+                            android:hint="@string/origen"
+                            android:drawableLeft="@mipmap/ic_action_car"
+                            android:background="@color/colorTextWhite"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:selectAllOnFocus="true"
+                            android:layout_marginTop="5dp" />
+
+                        <View android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorThirdGary"></View>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/DireccionCasa"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:singleLine="true"
+                            android:hint="@string/destino"
+                            android:drawableLeft="@mipmap/ic_action_home"
+                            android:background="@color/colorTextWhite"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:selectAllOnFocus="true"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="60dp"
+                    android:src="@mipmap/maker"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/realizarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center|bottom"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnCotizar"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="50dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:clickable="true"
+                    android:text="@string/btnCotizar"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorTextWhite"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/btncontinuarPedido"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:clickable="true"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/colorTextWhite"
+                    android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/getMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@mipmap/ic_action_location_2"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignRight="@+id/linearLayout8"
+            android:layout_alignEnd="@+id/linearLayout8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/AppTheme.FloatingActionButton"/>
+
+
+
+
+</RelativeLayout>

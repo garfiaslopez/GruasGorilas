@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextWhite"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="@string/bienvenido"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextWhite"
+            android:text="@string/rellenarCamposRegister"/>
+
+        <EditText
+            android:id="@+id/txtNombrePersonal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorTextWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@mipmap/ic_action_user"
+            android:layout_marginTop="@dimen/margin_top"
+            android:focusable="true"
+            android:inputType="text"
+            android:hint="@string/textInputNombre"
+            android:typeface="sans"
+            android:enabled="true" />
+
+        <EditText
+            android:id="@+id/txtCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorTextWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@mipmap/ic_action_phone"
+            android:layout_marginTop="@dimen/text_margin"
+            android:focusable="true"
+            android:inputType="phone"
+            android:hint="@string/textInputCellphone"
+            android:typeface="sans"
+            android:enabled="true" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorTextWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@mipmap/ic_action_mail"
+            android:layout_marginTop="@dimen/text_margin"
+            android:focusable="true"
+            android:inputType="textEmailAddress"
+            android:hint="@string/textInputCorreo"
+            android:typeface="sans"
+            android:enabled="true" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorTextWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@mipmap/ic_action_lock_closed"
+            android:layout_marginTop="@dimen/text_margin"
+            android:focusable="true"
+            android:inputType="textPassword"
+            android:hint="@string/textInputPassword"
+            android:password="true"
+            android:typeface="sans"
+            android:enabled="true" />
+
+        <TextView
+            android:id="@+id/terminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terminosDisclaimer"
+            android:clickable="true"
+            android:drawableRight="@mipmap/helpwhite"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/marginLeftRight"
+            android:layout_marginRight="@dimen/marginLeftRight"
+            android:textColor="@color/colorTextWhite"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/singup"
+            android:textColor="@color/colorTextWhite"
+            android:background="@drawable/round_form_login"
+            android:typeface="sans"
+            android:onClick="signup"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorTextWhite"
+            android:clickable="true"
+            android:onClick="abrirRegistrarGrua"
+            android:text="@string/tienesGrua"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

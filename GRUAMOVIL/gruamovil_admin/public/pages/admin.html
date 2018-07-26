@@ -1,0 +1,150 @@
+<html ng-app="AdminApp">
+<head>
+	<title>Panel De Control GrúaMóvil</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <base href="/#">
+
+	<link rel="stylesheet" type="text/css" href="../bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/angular-material-data-table/dist/md-data-table.min.css" />
+	<link rel="stylesheet" type="text/css" href="../bower_components/md-color-picker/dist/mdColorPicker.min.css"  />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="../public/styles/css/mainStyles.css">
+
+
+</head>
+
+
+<body layout="row" ng-controller="MainController">
+
+    <!-- SIDE NAV VIEW -->
+
+    <section layout="row" flex>
+
+
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+            <md-toolbar id="toolbar" layout="row" layout-align="space-around center">
+                <div>
+                    <img id="LogoAdmin" ng-src="../public/images/Logo.png" class="md-card-image">
+                </div>
+                <div>
+                    <h1 layout-align="left" class="md-toolbar-tools">Grúa Móvil</h1>
+                </div>
+            </md-toolbar>
+
+            <md-content>
+                <md-subheader class="md-primary">Menu</md-subheader>
+
+                <md-list-item ng-click="navigateTo(menuitem)" ng-repeat="menuitem in Menu">
+                    <md-icon ng-class='{selected : menuitem.selected}' md-svg-icon="{{menuitem.icon}}"></md-icon>
+                    <p ng-class='{selected : menuitem.selected}'> {{ menuitem.name }} </p>
+                </md-list-item>
+        </md-sidenav>
+
+
+        <!-- VIEW -->
+        <div flex layout="column">
+
+
+            <!-- NAV -->
+            <md-toolbar flex id="toolbar" layout="row" layout-align="center" class="toolbarmain md-toolbar-tools">
+
+                <!-- MENU BUTTON -->
+
+                <md-button class="menu" hide-gt-md ng-click="ShowMenu()" aria-label="Show Menu">
+                    <md-icon md-svg-icon="menu" ></md-icon>
+                </md-button>
+
+                <div flex layout="row" layout-align="center center" >
+
+                <h1 layout-align="center" class="md-toolbar-tools">{{Tittle}} {{TitleLavado}}</h1>
+
+                </div>
+
+                <md-menu>
+
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu()">
+                        <md-icon md-menu-origin md-svg-icon="usercircle"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="4">
+
+                        <md-menu-item>
+                            <md-button ng-click="LogOut()">
+                                <md-icon md-svg-icon="logout" md-menu-align-target></md-icon>
+                                Cerrar Sesión
+                            </md-button>
+                        </md-menu-item>
+
+                        <md-menu-divider></md-menu-divider>
+
+                        <md-menu-item>
+                            <md-button ng-click="Configuraciones()">
+                                <md-icon md-svg-icon="configurations"></md-icon>
+                                Configuraciones
+                            </md-button>
+                        </md-menu-item>
+
+
+                    </md-menu-content>
+                </md-menu>
+            </md-toolbar>
+            <!-- CONTENT -->
+            <md-content layout-padding>
+                <div ng-view>
+                </div>
+            </md-content>
+        </div>
+  </section>
+
+    <!-- Angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Angular Material Dependencies -->
+    <script src="../bower_components/angular-material/angular-material.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+
+    <!-- Angular Material Other Dependencies -->
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
+	<script src="../bower_components/tinycolor/dist/tinycolor-min.js"></script>
+	<script src="../bower_components/md-color-picker/dist/mdColorPicker.min.js"></script>
+   <!-- Angular Services -->
+    <script type="text/javascript" src="../public/js/services/authService.js"></script>
+    <script type="text/javascript" src="../public/js/services/Service.js"></script>
+
+
+    <!-- Angular Controllers -->
+    <script type="text/javascript" src="../public/js/controllers/admin/dashboardcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/usercontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/useradmincontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/vendorcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/routeexamplecontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/couponcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/carworkshopcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/noticeController.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/helpcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/historycontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/groupcontroller.js"></script>
+	<script type="text/javascript" src="../public/js/controllers/admin/towcontroller.js"></script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../public/js/routes/adminRoutes.js"></script>
+    <script type="text/javascript" src="../public/js/admin.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>

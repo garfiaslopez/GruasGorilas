@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <section layout="column">
+        <md-subheader id="subtitle"  class="md-primary">Agregar Franquicia</md-subheader>
+        <div>
+            <div flex layout="row" layout-sm="column" layout-align="space-around">
+                <div flex="33" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <label>Nombre</label>
+                        <input ng-model="Group.NewGroup.name">
+                    </md-input-container>
+                </div>
+
+                <div flex="33" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>Telefono</label>
+                        <input ng-model="Group.NewGroup.phone">
+                    </md-input-container>
+                </div>
+
+                <div flex="33" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>RFC</label>
+                        <input ng-model="Group.NewGroup.rfc">
+                    </md-input-container>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                <div flex="33" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <label>Nombre del responsable</label>
+                        <input ng-model="Group.NewGroup.responsibleName">
+                    </md-input-container>
+                </div>
+
+                <div flex="33" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>Telefono del responsable</label>
+                        <input ng-model="Group.NewGroup.responsiblePhone">
+                    </md-input-container>
+                </div>
+
+                <div flex="33" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>Direccion</label>
+                        <input ng-model="Group.NewGroup.address">
+                    </md-input-container>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div flex layout="row" layout-sm="column" layout-align="space-around">
+                <div flex="50" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <md-checkbox ng-model="Group.NewGroup.outCityServices" aria-label="Checkbox 1">
+                          Servicios Fuera De La Ciudad
+                        </md-checkbox>
+                    </md-input-container>
+                </div>
+                <div flex="50" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <md-checkbox ng-model="Group.NewGroup.moralPerson" aria-label="Checkbox 1">
+                          Persona Moral
+                        </md-checkbox>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                <div flex="50" flex-sm="100">
+                    <md-input-container class="md-block" >
+                        <label>Nombre Banco</label>
+                        <input ng-model="Group.NewGroup.bankName">
+                    </md-input-container>
+                </div>
+
+                <div flex="50" flex-sm="100">
+                   <md-input-container class="md-block">
+                        <label>CLABE</label>
+                        <input ng-model="Group.NewGroup.bankClabe">
+                    </md-input-container>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div flex layout="row" layout-align="space-around center">
+            <md-button id="primarybtn" ng-click="Group.Submit()" class="md-raised md-primary">Guardar</md-button>
+            <md-button id="secondarybtn" ng-click="Group.CancelEditing()" class="md-raised md-accent" ng-if="Group.isEditing.flag" >
+            Cancelar</md-button>
+        </div>
+
+        <br>
+        <md-subheader class="md-primary">Grupos Existentes</md-subheader>
+        <md-divider></md-divider>
+
+        <md-content>
+            <md-table-container>
+                <table md-table md-progress="Group.isLoading">
+                    <thead md-head>
+                        <tr md-row>
+                            <th md-column>#</th>
+                            <th md-column>Nombre</th>
+                            <th md-column>Telefono</th>
+                            <th md-column>Responsable</th>
+                            <th md-column>Direccion</th>
+                        </tr>
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row md-auto-select ng-repeat="ObjectDB in Group.GroupsOnDB" ng-click="Group.Edit(ObjectDB)">
+                            <td md-cell>{{$index + 1}}</td>
+                            <td md-cell>{{ObjectDB.name}}</td>
+                            <td md-cell>{{ObjectDB.phone}}</td>
+                            <td md-cell>{{ObjectDB.responsibleName}}</td>
+                            <td md-cell>{{ObjectDB.address}}</td>
+                            <td md-cell>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="Group.Delete(ObjectDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{Group.GroupsOnDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+    </section>

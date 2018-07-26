@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<div ng-cloak>
+    <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+
+            <md-tab label="Operadores">
+                <md-content class="md-padding">
+
+                    <md-content>
+                        <md-table-container>
+                            <table md-table md-progress="Vendor.isLoading">
+                                <thead md-head>
+                                    <tr md-row>
+                                        <th md-column>#</th>
+                                        <th md-column>Nombre</th>
+                                        <th md-column>Email/Username</th>
+                                        <th md-column>Telefono</th>
+                                        <th md-column>Calif</th>
+                                        <th md-column>Bloqueado</th>
+                                        <th md-column>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody md-body>
+                                    <tr md-row md-auto-select ng-repeat="VendorDB in Vendor.VendorsOnDB" ng-click="Vendor.Detail(VendorDB)">
+                                        <td md-cell>{{$index + 1}}</td>
+                                        <td md-cell>{{VendorDB.name}}</td>
+                                        <td md-cell>{{VendorDB.email.address}}</td>
+                                        <td md-cell>{{VendorDB.phone}}</td>
+                                        <td md-cell>{{VendorDB.rate.average}}</td>
+                                        <td md-cell>{{VendorDB.blocked}}</td>
+                                        <td md-cell>
+                                            <md-icon md-svg-icon="delete" aria-label="delete" ng-click="Vendor.Delete(VendorDB);$event.stopPropagation()" class="md-secondary md-hue-3"></md-icon>
+                                            <md-icon md-svg-icon="lock" aria-label="block" ng-click="Vendor.Block(VendorDB);$event.stopPropagation()" class="md-secondary md-hue-3"></md-icon>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </md-table-container>
+
+                        <md-data-table-pagination md-limit="10" md-page="1" md-total="{{VendorDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+                    </md-content>
+
+
+                </md-content>
+            </md-tab>
+
+            <md-tab label="Agregar">
+                <md-content class="md-padding">
+
+                    <md-subheader id="subtitle"  class="md-primary">Datos Personales</md-subheader>
+
+                    <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                        <div flex="50" flex-sm="100">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Franquicia</label>
+                                <md-select ng-model="Vendor.Usuario.group" md-on-open="Vendor.CleanTows()">
+                                    <md-option ng-repeat="GroupDB in Vendor.GroupsOnDB" value="{{GroupDB._id}}">
+                                        {{GroupDB.name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                        </div>
+
+                        <div flex="50" flex-sm="100">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Grua</label>
+                                <md-select ng-model="Vendor.Usuario.tow" md-on-open="Vendor.LoadTows()">
+                                    <md-option ng-repeat="TowDB in Vendor.TowsOnDB" value="{{TowDB._id}}">
+                                        {{TowDB.plate}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                        </div>
+                    </div>
+
+
+                    <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                        <div flex="33" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Nombre Completo</label>
+                                <input ng-model="Vendor.Usuario.name">
+                            </md-input-container>
+                        </div>
+                        <div flex="33" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Email/Username</label>
+                                <input ng-model="Vendor.Usuario.email">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="33" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Contraseña</label>
+                                <input ng-model="Vendor.Usuario.password">
+                            </md-input-container>
+                        </div>
+
+                    </div>
+
+                    <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                        <div flex="33" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Telefono</label>
+                                <input ng-model="Vendor.Usuario.phone">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="33" flex-sm="100">
+                            <md-datepicker ng-model="Vendor.Usuario.birthdate" md-placeholder="Fecha Nacimiento"></md-datepicker>
+                        </div>
+
+                    </div>
+
+                    <md-subheader class="md-primary">Otro Contacto (Emergencias)</md-subheader>
+
+                    <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                        <div flex="50" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Nombre</label>
+                                <input ng-model="Vendor.Usuario.othercontact.name">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="50" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Telefono</label>
+                                <input ng-model="Vendor.Usuario.othercontact.phone">
+                            </md-input-container>
+                        </div>
+
+                    </div>
+
+                    <md-subheader class="md-primary">Licencia</md-subheader>
+
+                    <div flex layout="row" layout-sm="column" layout-align="space-around">
+
+                        <div flex="25" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Primer Numero</label>
+                                <input ng-model="Vendor.Usuario.driverLicense.firstNumber">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="25" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Tipo</label>
+                                <input ng-model="Vendor.Usuario.driverLicense.firstTypeLicense">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="25" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Segundo Numero</label>
+                                <input ng-model="Vendor.Usuario.driverLicense.secondNumber">
+                            </md-input-container>
+                        </div>
+
+                        <div flex="25" flex-sm="100">
+                            <md-input-container class="md-block" >
+                                <label>Tipo</label>
+                                <input ng-model="Vendor.Usuario.driverLicense.secondTypeLicense">
+                            </md-input-container>
+                        </div>
+
+                    </div>
+
+                    <div flex layout="row" layout-align="space-around center">
+                        <md-button id="primarybtn" ng-click="Vendor.Submit()" class="md-raised md-primary">Guardar</md-button>
+                    </div>
+
+                </md-content>
+            </md-tab>
+        </md-tabs>
+
+    </md-content>
+</div>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/principal"
+            android:icon="@mipmap/ic_action_location"
+            android:title="@string/principal" />
+        <item
+            android:id="@+id/reservaciones"
+            android:icon="@mipmap/ic_action_news"
+            android:title="@string/reservaciones" />
+        <item
+            android:id="@+id/catalogo"
+            android:icon="@mipmap/ic_action_train"
+            android:title="@string/catalogo_afiliados" />
+        <!--<item
+            android:id="@+id/tarifas"
+            android:icon="@mipmap/ic_action_ticket"
+            android:title="@string/tarifas" />-->
+        <item
+            android:id="@+id/historial"
+            android:icon="@mipmap/ic_action_database"
+            android:title="@string/historial" />
+        <item
+            android:id="@+id/perfil"
+            android:icon="@mipmap/ic_action_user"
+            android:title="@string/perfil" />
+        <!--<item
+            android:id="@+id/datosPago"
+            android:icon="@mipmap/ic_action_creditcard"
+            android:title="@string/datosPago" />-->
+        <item
+            android:id="@+id/acercade"
+            android:icon="@mipmap/ic_action_tag"
+            android:title="@string/acercade" />
+
+        <item
+            android:id="@+id/ayuda"
+            android:icon="@mipmap/ic_action_help"
+            android:title="@string/ayuda" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_action_io"
+            android:title="@string/logout" />
+    </group>
+</menu>

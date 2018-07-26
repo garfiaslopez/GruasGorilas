@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundlogin"
+    tools:context="com.example.gargui3.gruasgorilas.RecuperarContrasena">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/colorTextWhite"
+        android:text="@string/tituloRecuperar"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorTextWhite"
+        android:text="@string/leyenda"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/correoRecuperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:drawableLeft="@mipmap/ic_action_mail"
+        android:background="@color/colorTextWhite"
+        android:hint="@string/correoElectronico"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextWhite"
+        android:background="@drawable/round_form_login"
+        android:text="@string/btnRecuperar"
+        android:onClick="olvideContraseñaEnviar"/>
+
+
+
+</LinearLayout>

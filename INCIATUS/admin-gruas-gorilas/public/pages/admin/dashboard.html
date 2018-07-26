@@ -1,0 +1,105 @@
+<section>
+    <md-subheader class="md-primary">Resumen del dia de hoy => {{Dashboard.TodayDate}}</md-subheader>
+
+    <md-grid-list layout-margin flex
+                md-cols-sm="2" md-cols="2" md-cols-gt-md="2"
+                md-row-height="4:1" md-row-height-sm="2:1"
+                md-gutter="12px">
+
+        <md-grid-tile class="md-whiteframe-z1 lightblue">
+            <div layout-fill layout="row" layout-align="center" class="md-tile-content">
+                <h2>#{{Dashboard.totalOrders}}</h2>
+            </div>
+            <md-grid-tile-footer>
+                <div class="md-tile-content" layout="row">
+                    <md-icon class="DashboardIcon" md-svg-icon="receipt"></md-icon>
+                    <h3 layout-padding>Ordenes</h3>
+                </div>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+
+
+
+        <md-grid-tile class="md-whiteframe-z1 green">
+            <div layout-fill layout="row" layout-align="center" class="md-tile-content">
+                <h2>${{Dashboard.totalPrice}}</h2>
+            </div>
+
+            <md-grid-tile-footer>
+                <div class="md-tile-content" layout="lightblue">
+                    <md-icon md-svg-icon="ganancias"></md-icon>
+                    <h3 layout-padding>Total</h3>
+                </div>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+
+        <md-grid-tile class="md-whiteframe-z1 orange">
+            <div layout-fill layout="row" layout-align="center" class="md-tile-content">
+                <h2>#{{Dashboard.connectedOperators}}</h2>
+            </div>
+            <md-grid-tile-footer>
+                <div class="md-tile-content" layout="row">
+                    <md-icon md-svg-icon="ingresses"></md-icon>
+                    <h3 layout-padding>Operadores</h3>
+                </div>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+
+
+
+        <md-grid-tile class="md-whiteframe-z1 teal">
+            <div layout-fill layout="row" layout-align="center" class="md-tile-content">
+                <h2>#{{Dashboard.connectedUsers}}</h2>
+            </div>
+            <md-grid-tile-footer>
+                <div class="md-tile-content" layout="row">
+                    <md-icon md-svg-icon="user"></md-icon>
+                    <h3 layout-padding>Usuarios</h3>
+                </div>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+
+    </md-grid-list>
+
+    <md-divider></md-divider>
+    <md-subheader class="md-primary">Detalle de pedidos:</md-subheader>
+
+    <md-content>
+        <md-table-container>
+            <table md-table md-progress="Dashboard.isLoading">
+                <thead md-head>
+                    <tr md-row>
+                        <th md-column>#</th>
+                        <th md-column>Fecha</th>
+                        <th md-column>Tipo</th>
+                        <th md-column>Usuario</th>
+                        <th md-column>Operador</th>
+                        <th md-column>Origen</th>
+                        <th md-column>Destino</th>
+                        <th md-column>Status</th>
+                        <th md-column>Acciones</th>
+
+                    </tr>
+                </thead>
+                <tbody md-body>
+                    <tr md-row md-auto-select ng-repeat="OrderDB in Dashboard.OrdersOnDB">
+                        <td md-cell>{{OrderDB.order_id}}</td>
+                        <td md-cell>{{OrderDB.date}}</td>
+                        <td md-cell>{{OrderDB.type}}</td>
+                        <td md-cell>{{OrderDB.user_id.name}}</td>
+                        <td md-cell>{{OrderDB.operator_id.name}}</td>
+                        <td md-cell>{{OrderDB.origin.denomination}}</td>
+                        <td md-cell>{{OrderDB.destiny.denomination}}</td>
+                        <td md-cell>{{OrderDB.status}}</td>
+                        <td md-cell>
+                            <md-icon md-svg-icon="delete" aria-label="delete" ng-click="Dashboard.DeleteOrder(OrderDB)" class="md-secondary md-hue-3"></md-icon>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+        <md-table-pagination md-limit="Dashboard.Query.limit" md-limit-options="[10, 50, 100]" md-page="Dashboard.actualPage" md-total="{{Dashboard.OrdersOnDB.length}}" md-on-paginate="Dashboard.onPaginate" md-page-select></md-table-pagination>
+    </md-content>
+
+
+</section>

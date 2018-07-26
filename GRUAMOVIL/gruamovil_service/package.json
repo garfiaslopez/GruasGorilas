@@ -1,0 +1,48 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "API + WEBADMIN + WEBPAGE",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^2.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.14.2",
+    "bunyan": "^1.5.1",
+    "conekta": "^2.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.0.0",
+    "mailgun-js": "^0.7.7",
+    "mkdirp": "^0.5.1",
+    "mobile-detect": "^1.3.6",
+    "moment": "^2.11.1",
+    "mongoose": "^4.3.6",
+    "mongoose-auto-increment": "latest",
+    "mongoose-encryption": "^1.3.0",
+    "mongoose-paginate": "^5.0.0",
+    "morgan": "^1.6.1",
+    "mpath": "^0.2.1",
+    "request": "^2.74.0",
+    "restify": "^4.0.3",
+    "socket.io": "^1.4.4",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-ruby-sass": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-watch": "latest",
+    "gulp-nodemon": "latest"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test PORT=3001 node server.js"
+  },
+  "author": "Jose Garfias Lopez (@garfiaslopez)",
+  "license": "ISC"
+}

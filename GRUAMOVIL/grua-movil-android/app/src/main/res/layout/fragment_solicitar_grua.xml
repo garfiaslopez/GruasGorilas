@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="layout.fragment_solicitarGrua">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorThirdGary"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextWhite"
+        android:text="@string/ultimaCotizacion"/>
+
+    <LinearLayout
+        android:id="@+id/ultimoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/numPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="#70"/>
+
+            <TextView
+                android:id="@+id/fechaPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="14/07/2017"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/origenPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@mipmap/ic_action_location"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="kjhasdkjhdsajhkdsahkjdsah"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/destinoPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:drawableLeft="@mipmap/ic_action_location_2"
+            android:textStyle="bold"
+            android:text="kjhasdkjhdsajhkdsahkjdsah"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gruaPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Grua Garfias"/>
+
+            <TextView
+                android:id="@+id/precioPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="$400"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorThirdGary"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextWhite"
+        android:text="@string/agendados"/>
+
+    <ListView
+        android:id="@+id/lstAgendados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

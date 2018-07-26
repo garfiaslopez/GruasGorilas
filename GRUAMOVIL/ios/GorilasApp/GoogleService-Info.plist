@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>909029494329-rdfiv3l5421mfmlcb8ig2t3t85aibs33.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.909029494329-rdfiv3l5421mfmlcb8ig2t3t85aibs33</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjBUasrpZdiJ30r3Zx0n6_HuKlQ9vuwn4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>909029494329</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Inciatus.GruaMovil</string>
+	<key>PROJECT_ID</key>
+	<string>gruamovil-f2a2b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gruamovil-f2a2b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:909029494329:ios:aecae1c3e585016b</string>
+	<key>DATABASE_URL</key>
+	<string>https://gruamovil-f2a2b.firebaseio.com</string>
+	<key>TRACKING_ID</key>
+	<string>UA-103819833-1</string>
+</dict>
+</plist>

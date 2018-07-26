@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="GorilasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQO-qQ-0VG">
+                        <rect key="frame" x="16" y="-1" width="180" height="45.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjG-87-6U7">
+                        <rect key="frame" x="204" y="-1" width="100" height="45.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="hoK-yV-wkh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.6705882353" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uQO-qQ-0VG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="5lg-iq-s3L"/>
+                    <constraint firstItem="uQO-qQ-0VG" firstAttribute="firstBaseline" secondItem="vjG-87-6U7" secondAttribute="firstBaseline" id="LFc-uv-Hsz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vjG-87-6U7" secondAttribute="trailing" constant="8" id="Mmd-iu-55k"/>
+                    <constraint firstItem="vjG-87-6U7" firstAttribute="baseline" secondItem="uQO-qQ-0VG" secondAttribute="baseline" id="OhN-CZ-Xzt"/>
+                    <constraint firstItem="uQO-qQ-0VG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VRg-AD-pDT"/>
+                    <constraint firstItem="uQO-qQ-0VG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="gQz-bU-mOb"/>
+                    <constraint firstItem="vjG-87-6U7" firstAttribute="leading" secondItem="uQO-qQ-0VG" secondAttribute="trailing" constant="8" symbolic="YES" id="sLR-oh-hXL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DescriptionLabel" destination="vjG-87-6U7" id="oKi-7U-eCo"/>
+                <outlet property="TitleLabel" destination="uQO-qQ-0VG" id="DF0-qd-wRm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

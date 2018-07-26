@@ -1,0 +1,45 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+    // First application
+    {
+      name      : "Service",
+      script    : "server.js",
+      env: {
+        COMMON_VARIABLE: "true"
+      },
+      env_production : {
+        NODE_ENV: "production"
+      }
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    production : {
+      user : "node",
+      host : "http://45.55.200.39",
+      ref  : "origin/master",
+      repo : "git@bitbucket.org:berrysoft/service-gruas-gorilas.git",
+      path : "/home/service-gruas-gorilas",
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+    },
+    dev : {
+      user : "node",
+      host : "http://45.55.200.39",
+      ref  : "origin/develop",
+      repo : "git@bitbucket.org:berrysoft/service-gruas-gorilas.git",
+      path : "service-gruas-gorilas",
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env dev",
+      env  : {
+        NODE_ENV: "dev"
+      }
+    }
+  }
+}
